@@ -4,7 +4,7 @@ mixin productForm(product, categories, saveURL, cancelURL)
         form(action=saveURL method='post')
             div.form-input
                 label(for="product_name") Product Name
-                input(type="text" id="product_name" value=product.product_name)
+                input(name='product_name' id="product_name" value=product.product_name)
 
             div.form-input
                 label(for="category") Category
